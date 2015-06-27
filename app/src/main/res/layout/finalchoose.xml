@@ -31,7 +31,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Send message to reseller"
+            android:text="Tap to send message to reseller"
             android:id="@+id/textView10"
             android:layout_gravity="center_horizontal"
             android:layout_weight="0.14" />

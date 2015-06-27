@@ -13,7 +13,6 @@ import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Switch;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -59,7 +58,6 @@ public class Welcome extends ActionBarActivity {
         final Switch swi = (Switch) findViewById(R.id.switch1);
         swi.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                        Toast.makeText(Welcome.this, "Switching to logos", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(Welcome.this, Logos.class);
                          swi.setChecked(false);
                         startActivity(intent);

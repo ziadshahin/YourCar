@@ -35,7 +35,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_gravity="center_horizontal"
-        android:weightSum="2"
+        android:weightSum="4"
         android:layout_weight="1">
 
         <LinearLayout
@@ -64,6 +64,32 @@
                 android:src="@drawable/mazda1"/>
         </LinearLayout>
 
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:src="@drawable/toyota"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView12"
+                android:src="@drawable/Chevrolet"/>
+        </LinearLayout>
+
     </LinearLayout>
 
     <LinearLayout
@@ -71,7 +97,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_gravity="center_horizontal"
-        android:weightSum="2"
+        android:weightSum="4"
         android:layout_weight="1"
         android:transitionGroup="false">
 
@@ -102,13 +128,40 @@
                 android:src="@drawable/proton1"
                 android:layout_weight="1" />
         </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView13"
+                android:src="@drawable/kia"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView14"
+                android:src="@drawable/peugeot"/>
+        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:weightSum="4">
 
         <LinearLayout
             android:orientation="horizontal"
@@ -133,7 +186,33 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/imageView8"
-                android:src="@drawable/honda1"/>
+                android:src="@drawable/Honda2"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView15"
+                android:src="@drawable/seat"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView16"
+                android:src="@drawable/volvo1"/>
         </LinearLayout>
     </LinearLayout>
 

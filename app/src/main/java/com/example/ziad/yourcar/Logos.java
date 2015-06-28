@@ -88,6 +88,69 @@ public class Logos extends ActionBarActivity {
             }
         });
 
+        final ImageView img7 = (ImageView) findViewById(R.id.imageView);
+        img7.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Toast.makeText(Logos.this, "Opening Toyota database", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(Logos.this, databasenew.class)
+                        .putExtra(Intent.EXTRA_TEXT,"Toyota");
+                startActivity(intent);
+            }
+        });
+
+        final ImageView img8 = (ImageView) findViewById(R.id.imageView12);
+        img8.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Toast.makeText(Logos.this, "Opening Chevorlet database", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(Logos.this, databasenew.class)
+                        .putExtra(Intent.EXTRA_TEXT,"Chevorlet");
+                startActivity(intent);
+            }
+        });
+
+        final ImageView img9 = (ImageView) findViewById(R.id.imageView13);
+        img9.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Toast.makeText(Logos.this, "Opening Kia database", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(Logos.this, databasenew.class)
+                        .putExtra(Intent.EXTRA_TEXT,"Kia");
+                startActivity(intent);
+            }
+        });
+
+        final ImageView img10 = (ImageView) findViewById(R.id.imageView14);
+        img10.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Toast.makeText(Logos.this, "Opening Peugeot database", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(Logos.this, databasenew.class)
+                        .putExtra(Intent.EXTRA_TEXT,"Peugeot");
+                startActivity(intent);
+            }
+        });
+
+        final ImageView img11 = (ImageView) findViewById(R.id.imageView15);
+        img11.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Toast.makeText(Logos.this, "Opening Seat database", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(Logos.this, databasenew.class)
+                        .putExtra(Intent.EXTRA_TEXT,"Seat");
+                startActivity(intent);
+            }
+        });
+
+
+        final ImageView img12 = (ImageView) findViewById(R.id.imageView16);
+        img12.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Toast.makeText(Logos.this, "Opening Volvo database", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(Logos.this, databasenew.class)
+                        .putExtra(Intent.EXTRA_TEXT,"Volvo");
+                startActivity(intent);
+            }
+        });
+
+
+
         final Switch swi = (Switch) findViewById(R.id.switch2);
         swi.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {

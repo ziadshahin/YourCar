@@ -37,6 +37,13 @@ public class Welcome extends ActionBarActivity {
         data.add("Proton");
         data.add("Mitsubishi");
         data.add("Honda");
+        data.add("Chevrolet");
+        data.add("Kia");
+        data.add("Peugeot");
+        data.add("Seat");
+        data.add("Toyota");
+        data.add("Volvo");
+
 
 
         ArrayAdapter<String> TypesAdapter = new ArrayAdapter<String>(getApplicationContext(), R.layout.row, R.id.textView8, data);
@@ -59,8 +66,8 @@ public class Welcome extends ActionBarActivity {
         swi.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                         Intent intent = new Intent(Welcome.this, Logos.class);
-                         swi.setChecked(false);
-                        startActivity(intent);
+                swi.setChecked(false);
+                startActivity(intent);
                     }
                 });
                 final ImageView img = (ImageView) findViewById(R.id.imageView11);

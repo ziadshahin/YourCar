@@ -20,8 +20,16 @@ public class DBProvider extends ContentProvider {
     public static final String proton = "content://com.example.ziad.yourcar/4";
     public static final String mitsubishi = "content://com.example.ziad.yourcar/5";
    public static final String honda = "content://com.example.ziad.yourcar/6";
+    public static final String chevrolet = "content://com.example.ziad.yourcar/7";
+    public static final String kia = "content://com.example.ziad.yourcar/8";
+    public static final String peugeot = "content://com.example.ziad.yourcar/9";
+    public static final String seat = "content://com.example.ziad.yourcar/10";
+    public static final String toyota = "content://com.example.ziad.yourcar/11";
+    public static final String volvo = "content://com.example.ziad.yourcar/12";
 
-@Override
+
+
+    @Override
     public boolean onCreate()
 {
 
@@ -69,6 +77,36 @@ public class DBProvider extends ContentProvider {
                 retCursor=Carsdb.getReadableDatabase().rawQuery(selectQuery,null);
                 break;
 
+            }
+            case chevrolet: {
+                selectQuery= "SELECT * FROM "+"Chevrolet";
+                retCursor=Carsdb.getReadableDatabase().rawQuery(selectQuery,null);
+                break;
+            }
+            case kia: {
+                selectQuery= "SELECT * FROM "+"Kia";
+                retCursor=Carsdb.getReadableDatabase().rawQuery(selectQuery,null);
+                break;
+            }
+            case peugeot: {
+                selectQuery= "SELECT * FROM "+"Peugeot";
+                retCursor=Carsdb.getReadableDatabase().rawQuery(selectQuery,null);
+                break;
+            }
+            case seat: {
+                selectQuery= "SELECT * FROM "+"Seat";
+                retCursor=Carsdb.getReadableDatabase().rawQuery(selectQuery,null);
+                break;
+            }
+            case toyota: {
+                selectQuery= "SELECT * FROM "+"Toyota";
+                retCursor=Carsdb.getReadableDatabase().rawQuery(selectQuery,null);
+                break;
+            }
+            case volvo: {
+                selectQuery= "SELECT * FROM "+"Volvo";
+                retCursor=Carsdb.getReadableDatabase().rawQuery(selectQuery,null);
+                break;
             }
             default:
                 throw new UnsupportedOperationException("Unknown uri: " + uri);

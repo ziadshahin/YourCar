@@ -19,6 +19,8 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import java.util.Locale;
+
 
 public class databasenew extends ActionBarActivity implements LoaderManager.LoaderCallbacks<Cursor> {
 
@@ -35,17 +37,29 @@ public class databasenew extends ActionBarActivity implements LoaderManager.Load
     private String GetNumberCall(String types) {
         switch (types) {
             case ("Opel"):
-                return "1111111111";
+                return "+20 2 33086777";
             case ("Mazda"):
-                return "2222222222";
+                return "+20 16670";
             case ("Audi"):
-                return "3333333333";
+                return " 012 110 710 72";
             case ("Proton"):
-                return "4444444444";
+                return "+20 19399";
             case ("Mitsubishi"):
-                return "5555555555";
+                return "+20 16606";
             case ("Honda"):
-                return "6666666666";
+                return "+20 2 26119811";
+            case ("Chevrolet"):
+                return "+20 16424";
+            case ("Kia"):
+                return "+20 19949";
+            case ("Peugeot"):
+                return "+20 19207";
+            case ("Seat"):
+                return "+20 19178";
+            case ("Toyota"):
+                return "+20 2 24880400";
+            case ("Volvo"):
+                return "+20 019 55 00 111";
             default:
                 return "0";
 
@@ -66,11 +80,56 @@ public class databasenew extends ActionBarActivity implements LoaderManager.Load
                 return "5";
             case ("Honda"):
                 return "6";
+            case ("Chevrolet"):
+                return "7";
+            case ("Kia"):
+                return "8";
+            case ("Peugeot"):
+                return "9";
+            case ("Seat"):
+                return "10";
+            case ("Toyota"):
+                return "11";
+            case ("Volvo"):
+                return "12";
             default:
                 return "0";
 
         }
     }
+
+    private String GetLocation(String tablename) {
+        switch (tablename) {
+            case ("Opel"):
+                return "geo:30.056643,31.204324?q=30.056643,31.204324";
+            case ("Mazda"):
+                return "geo:30.0562242,31.2372846?q=30.0562242,31.2372846";
+            case ("Audi"):
+                return "geo:29.9571603,31.2511569?q=29.9571603,31.2511569";
+            case ("Proton"):
+                return "geo:30.0483256,31.2143084?q=30.0483256,31.2143084";
+            case ("Mitsubishi"):
+                return "geo:30.0607186,31.0310394?q=30.0607186,31.0310394";
+            case ("Honda"):
+                return "geo:30.0632989,31.204874?q=30.0632989,31.204874";
+            case ("Chevrolet"):
+                return "geo:30.056643,31.204324?q=30.056643,31.204324";
+            case ("Kia"):
+                return "geo:30.0564572,31.2020726?q=30.0564572,31.2020726";
+            case ("Peugeot"):
+                return "geo:30.0618096,31.2840588?q=30.0618096,31.2840588";
+            case ("Seat"):
+                return "geo:30.0742121,31.2483291?q=30.0742121,31.2483291";
+            case ("Toyota"):
+                return "geo:30.0634045,31.2821344?q=30.0634045,31.2821344";
+            case ("Volvo"):
+                return "geo:30.0484462,31.2374613?q=30.0484462,31.2374613";
+            default:
+                return "0";
+
+        }
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -107,8 +166,18 @@ public class databasenew extends ActionBarActivity implements LoaderManager.Load
             }
         });
 
-        final Button but = (Button) findViewById(R.id.button);
-        but.setOnClickListener(new View.OnClickListener() {
+        final Button but1 = (Button) findViewById(R.id.button2);
+        but1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                String uri = String.format(Locale.ENGLISH, GetLocation(Type));
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
+                startActivity(intent);
+            }
+            });
+
+
+        final Button but2 = (Button) findViewById(R.id.button);
+        but2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 try {
                     Intent callIntent = new Intent(Intent.ACTION_CALL);
@@ -120,7 +189,6 @@ public class databasenew extends ActionBarActivity implements LoaderManager.Load
             }
 
         });
-
 
 
 

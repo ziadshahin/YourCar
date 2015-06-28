@@ -101,9 +101,9 @@ public class Logos extends ActionBarActivity {
         final ImageView img8 = (ImageView) findViewById(R.id.imageView12);
         img8.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(Logos.this, "Opening Chevorlet database", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Logos.this, "Opening Chevrolet database", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(Logos.this, databasenew.class)
-                        .putExtra(Intent.EXTRA_TEXT,"Chevorlet");
+                        .putExtra(Intent.EXTRA_TEXT,"Chevrolet");
                 startActivity(intent);
             }
         });
@@ -150,9 +150,8 @@ public class Logos extends ActionBarActivity {
         });
 
 
-
-        final Switch swi = (Switch) findViewById(R.id.switch2);
-        swi.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        final Switch swi2 = (Switch) findViewById(R.id.switch2);
+        swi2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 onBackPressed();
 

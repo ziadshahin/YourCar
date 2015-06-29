@@ -175,6 +175,10 @@ public class databasenew extends ActionBarActivity implements LoaderManager.Load
             }
             });
 
+        TextView car = (TextView) findViewById(R.id.textView);
+        car.setText(Type);
+
+
 
         final Button but2 = (Button) findViewById(R.id.button);
         but2.setOnClickListener(new View.OnClickListener() {

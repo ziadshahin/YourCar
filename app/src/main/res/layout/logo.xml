@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffff">
+    android:background="#e0ffff"
+    android:weightSum="3.4">
 
     <LinearLayout
         android:orientation="vertical"
@@ -26,7 +27,7 @@
             android:text="Choose your logo"
             android:id="@+id/textView4"
             android:layout_gravity="center_horizontal"
-            android:textColor="#ff3316ff"/>
+            android:textColor="#000000"/>
 
     </LinearLayout>
 
@@ -45,8 +46,8 @@
             android:layout_weight="1">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:id="@+id/imageView3"
                 android:src="@drawable/opel1"/>
         </LinearLayout>
@@ -71,8 +72,8 @@
             android:layout_weight="1">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:id="@+id/imageView"
                 android:src="@drawable/toyota"/>
         </LinearLayout>
@@ -84,10 +85,10 @@
             android:layout_weight="1">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:id="@+id/imageView12"
-                android:src="@drawable/chevrolet1"/>
+                android:src="@drawable/chevrolet2"/>
         </LinearLayout>
 
     </LinearLayout>
@@ -111,8 +112,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/imageView5"
-                android:src="@drawable/audi1"
-                android:layout_weight="1" />
+                android:src="@drawable/audi2" />
         </LinearLayout>
 
         <LinearLayout
@@ -125,8 +125,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/imageView6"
-                android:src="@drawable/proton1"
-                android:layout_weight="1" />
+                android:src="@drawable/proton" />
         </LinearLayout>
 
         <LinearLayout
@@ -136,10 +135,10 @@
             android:layout_weight="1">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:id="@+id/imageView13"
-                android:src="@drawable/kia"/>
+                android:src="@drawable/kia1"/>
         </LinearLayout>
 
         <LinearLayout
@@ -149,8 +148,8 @@
             android:layout_weight="1">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:id="@+id/imageView14"
                 android:src="@drawable/peugeot"/>
         </LinearLayout>
@@ -173,7 +172,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/imageView7"
-                android:src="@drawable/mitsubishi1" />
+                android:src="@drawable/mitsubishi2" />
         </LinearLayout>
 
         <LinearLayout
@@ -196,10 +195,10 @@
             android:layout_weight="1">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:id="@+id/imageView15"
-                android:src="@drawable/seat"/>
+                android:src="@drawable/seat2"/>
         </LinearLayout>
 
         <LinearLayout
@@ -209,18 +208,13 @@
             android:layout_weight="1">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:id="@+id/imageView16"
-                android:src="@drawable/volvo1"/>
+                android:src="@drawable/volvo2"
+                android:adjustViewBounds="false" />
         </LinearLayout>
     </LinearLayout>
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_weight="0.25" />
 
     <Switch
         android:layout_width="wrap_content"

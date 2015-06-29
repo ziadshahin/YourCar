@@ -7,6 +7,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -40,6 +41,16 @@ public class MainActivity extends ActionBarActivity {
                 startActivity(intent);
             }
             });
+
+        final Button but1 = (Button) findViewById(R.id.button3);
+        but1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_MAIN);
+                intent.addCategory(Intent.CATEGORY_HOME);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
+            }
+        });
 
         final ImageView img2 = (ImageView) findViewById(R.id.imageView2);
         img2.setOnClickListener(new View.OnClickListener() {
